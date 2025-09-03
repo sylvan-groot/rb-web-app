@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def greet():
-    return "Webhook tech"
+    return "Webhook"
 
 if __name__ == "__main__":
     app.run()
