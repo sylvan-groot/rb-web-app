@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div>
-      <h1>Backend data te:</h1>
+      <h1>Backend data test:</h1>
       <p>{data}</p>
     </div>
   );
