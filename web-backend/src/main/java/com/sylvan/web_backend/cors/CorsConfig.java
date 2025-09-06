@@ -13,7 +13,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedOrigins("http://localhost:3000")
+                        .allowedOrigins("https://sr-groot.duckdns.org", "http://localhost:3000") // frontend URLs
                         .allowedMethods("GET", "POST", "PUT", "DELETE") // HTTP methods
                         .allowCredentials(true); // optional cookies/auth
             }

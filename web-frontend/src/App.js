@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/hello")
+    fetch("https://sr-groot.duckdns.org/api/hello")
       .then((res) => res.json())
       .then((data) => setData(data.message))
       .catch((err) => console.error("Fetch error:", err));
