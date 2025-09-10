@@ -12,3 +12,21 @@
   font-family: Arial, sans-serif;
   padding: 20px;
 }
+
+.bar-fill {
+  background: linear-gradient(90deg, #4cafef, #007acc);
+  height: 100%;
+  width: 0;
+  transition: width 1.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.bar-label {
+  opacity: 0.9;
+}
