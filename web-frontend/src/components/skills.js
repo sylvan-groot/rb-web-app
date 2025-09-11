@@ -41,14 +41,14 @@ function Skills() {
     const skills = skillSets[selected];
 
   return (
-    <div className="w-4/5 max-w-xl mx-auto">
+    <div className="w-4/5 max-w-xl mx-auto mt-6">
       <div className="flex justify-center gap-4 mb-6">
         {Object.keys(skillSets).map((key) => (
           <Button
             key={key}
-            className={` ${
+            className={`${
               selected === key
-                ? ""
+                ? "after:w-full text-blue-600"
                 : ""
             }`}
             onClick={() => setSelected(key)}

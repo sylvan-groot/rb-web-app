@@ -1,7 +1,10 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import Button from './components/button';
+import Footer from './components/Footer';
 import Skills from './components/skills';
+import { User, Puzzle, GraduationCap } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function App() {
   const [data, setData] = useState("");
@@ -15,13 +18,19 @@ function App() {
 
   return (
     <div className="App">
-      <div className="px-8 sm:px-16">
+      <div className="px-8 sm:px-16 content">
         <nav className="flex items-center justify-between py-4 border-b border-gray-300">
           <div className="text-2xl font-bold text-blue-600">Sylvan Groot</div>
-          <div>
+          <div className="flex items-center gap-4">
             <Button>Home</Button>
             <Button>About</Button>
             <Button>Contact</Button>
+            <a href="https://github.com/sylvan-groot" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="w-6 h-6 text-gray-700 hover:text-blue-600 transition" />
+            </a>
+            <a href="https://linkedin.com/in/sylvan-groot-a49412176" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="w-6 h-6 text-gray-700 hover:text-blue-600 transition" />
+            </a>
           </div>
         </nav>
         <div className="min-h-[88vh] flex flex-col md:flex-row items-center justify-between px-6 md:px-4">
@@ -44,15 +53,34 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="text-center">
-          <h1 className='text-4xl font-bold text-blue-600 mt-8'>About</h1>
-          <p className='text-xl text-gray-700 mt-4'>
-            24 Year old software developer from the Netherlands. I have been learning programming for 8 years now and have experience with various programming languages and frameworks.
-            My interest in programming started because I wanted to work with computers and I was also great at puzzle solving. I have since then been developing my skills on many different sides of IT.
-            I have finished my bachelor's degree in HBO-ICT and gained practical experience through internships and personal projects.
-          </p>
-          <h1 className='text-4xl font-bold text-blue-600 mt-8'>Programming experience</h1>
-          <p className='text-xl text-gray-700 mt-4'>
+        <div className='py-4 border-b border-gray-300'/>
+        <div className="text-center my-8 max-w-2xl mx-auto">      
+          <h1 className='text-4xl font-bold text-blue-600 mt-8'>Who am I</h1>
+          <div className="flex items-center justify-between">
+            <p className='text-xl text-gray-700 mt-4 text-left'>
+              24 Year old software developer from the Netherlands. I have been learning programming for 8 years now and have experience with various programming languages and frameworks.
+            </p>
+            <User className="w-16 h-16 text-gray-500 opacity-70 flex-shrink-0" />
+          </div>
+
+          <div className="flex items-center justify-between">
+            <p className='text-xl text-gray-700 mt-12 text-left'>
+              My interest in programming started because I wanted to work with computers and I was also great at puzzle solving. I have since then been developing my skills on many different sides of IT.
+            </p>
+            <Puzzle className="w-14 h-14 text-gray-500 opacity-70 flex-shrink-0 mt-10" />
+          </div>
+
+          <div className="flex items-center justify-between">
+            <p className='text-xl text-gray-700 mt-12 text-left'>
+              I have finished my bachelor's degree in HBO-ICT and gained practical experience through internships and personal projects.
+            </p>
+            <GraduationCap className="w-14 h-14 text-gray-500 opacity-70 flex-shrink-0 mt-10" />
+          </div>
+        </div>
+        <div className='py-4 border-b border-gray-300'/>
+        <div className="text-center my-8 max-w-3xl mx-auto">
+          <h1 className='text-4xl font-bold text-blue-600 mt-16'>Programming experience</h1>
+          <p className='text-xl text-gray-700 mt-8'>
             I have worked with many different programming languages and frameworks. This includes:<br/>
             {/* Frontend: HTML • CSS • JavaScript • React • Tailwind CSS<br/>
             Backend: Java • Spring Boot • Node.js • Express.js<br/>
@@ -60,12 +88,84 @@ function App() {
             Other: Git • Docker • AWS<br/> */}
           </p>
           <Skills />
-          <h1 className='text-4xl font-bold text-blue-600 mt-8'>Projects</h1>
+        </div>
+        <div className='py-4 border-b border-gray-300'/>
+        <div className="text-center my-8 max-w-3xl mx-auto">
+          <h1 className='text-4xl font-bold text-blue-600 mt-16'>Projects</h1>
           <p className='text-xl text-gray-700 mt-4'>
             Here are some of the projects I have worked on:
           </p>
+          <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition mt-16">
+            <img
+              src="/images/project1.png"
+              alt="Project 1"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h2 className="text-2xl font-bold text-blue-600">Project</h2>
+              <p className="text-gray-700 mt-2">
+                Project Description
+              </p>
+              <div className="flex justify-between items-center mt-4">
+                <span className="text-sm text-gray-500">React • Node.js</span>
+                <a
+                  href="https://github.com/yourusername/project1"
+                  className="text-blue-600 hover:underline"
+                >
+                  GitHub →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition mt-16">
+            <img
+              src="/images/project1.png"
+              alt="Project 1"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h2 className="text-2xl font-bold text-blue-600">Project</h2>
+              <p className="text-gray-700 mt-2">
+                Project Description
+              </p>
+              <div className="flex justify-between items-center mt-4">
+                <span className="text-sm text-gray-500">React • Node.js</span>
+                <a
+                  href="https://github.com/yourusername/project1"
+                  className="text-blue-600 hover:underline"
+                >
+                  GitHub →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition mt-16">
+            <img
+              src="/images/project1.png"
+              alt="Project 1"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h2 className="text-2xl font-bold text-blue-600">Project</h2>
+              <p className="text-gray-700 mt-2">
+                Project Description
+              </p>
+              <div className="flex justify-between items-center mt-4">
+                <span className="text-sm text-gray-500">React • Node.js</span>
+                <a
+                  href="https://github.com/yourusername/project1"
+                  className="text-blue-600 hover:underline"
+                >
+                  GitHub →
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
