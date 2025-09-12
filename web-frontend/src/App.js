@@ -22,9 +22,10 @@ function App() {
         <nav className="flex items-center justify-between py-4 border-b border-gray-300">
           <div className="text-2xl font-bold text-blue-600">Sylvan Groot</div>
           <div className="flex items-center gap-4">
-            <Button>Home</Button>
-            <Button>About</Button>
-            <Button>Contact</Button>
+            <Button href="#about">About</Button>
+            <Button href="#experience">Experience</Button>
+            <Button href="#projects">Projects</Button>
+            <Button href="mailto:Sylvan.Groot@outlook.com">Contact</Button>
             <a href="https://github.com/sylvan-groot" target="_blank" rel="noopener noreferrer">
               <FaGithub className="w-6 h-6 text-gray-700 hover:text-blue-600 transition" />
             </a>
@@ -53,7 +54,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='py-4 border-b border-gray-300'/>
+        <div className='py-4 border-b border-gray-300' id="about"/>
         <div className="text-center my-8 max-w-2xl mx-auto">      
           <h1 className='text-4xl font-bold text-blue-600 mt-8'>Who am I</h1>
           <div className="flex items-center justify-between">
@@ -77,7 +78,7 @@ function App() {
             <GraduationCap className="w-14 h-14 text-gray-500 opacity-70 flex-shrink-0 mt-10" />
           </div>
         </div>
-        <div className='py-4 border-b border-gray-300'/>
+        <div className='py-4 border-b border-gray-300' id="experience"/>
         <div className="text-center my-8 max-w-3xl mx-auto">
           <h1 className='text-4xl font-bold text-blue-600 mt-16'>Programming experience</h1>
           <p className='text-xl text-gray-700 mt-8'>
@@ -91,7 +92,7 @@ function App() {
           </p>
           <Skills />
         </div>
-        <div className='py-4 border-b border-gray-300'/>
+        <div className='py-4 border-b border-gray-300' id="projects"/>
         <div className="text-center my-8 max-w-3xl mx-auto">
           <h1 className='text-4xl font-bold text-blue-600 mt-16'>Projects</h1>
           <p className='text-xl text-gray-700 mt-4'>

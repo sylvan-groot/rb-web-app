@@ -18,8 +18,8 @@ function Footer() {
         <div className="flex space-x-6 mt-4 md:mt-0">
           <a href="#about" className="hover:text-blue-600">About</a>
           <a href="#projects" className="hover:text-blue-600">Projects</a>
-          <a href="#skills" className="hover:text-blue-600">Skills</a>
-          <a href="#contact" className="hover:text-blue-600">Contact</a>
+          <a href="#experience" className="hover:text-blue-600">Experience</a>
+          <a href="mailto:Sylvan.Groot@outlook.com" className="hover:text-blue-600">Contact</a>
           <a
             href="https://github.com/sylvan-groot"
             target="_blank"
@@ -32,7 +32,7 @@ function Footer() {
             href="https://www.linkedin.com/in/sylvan-groot-a49412176/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-700 text-xl"
+            className="hover:text-black-700 text-xl"
           >
             <FaLinkedin />
           </a>
