@@ -81,7 +81,9 @@ function App() {
         <div className="text-center my-8 max-w-3xl mx-auto">
           <h1 className='text-4xl font-bold text-blue-600 mt-16'>Programming experience</h1>
           <p className='text-xl text-gray-700 mt-8'>
-            I have worked with many different programming languages and frameworks. This includes:<br/>
+            I have worked with many different programming languages and frameworks during my studies and internships.
+            My experience between languages varies based on how much I have worked with them.
+            Below is an overview of how I rate my proficiency with these technologies.
             {/* Frontend: HTML • CSS • JavaScript • React • Tailwind CSS<br/>
             Backend: Java • Spring Boot • Node.js • Express.js<br/>
             Database: MySQL • PostgreSQL • MongoDB<br/>

@@ -8,10 +8,10 @@ function Footer() {
         <div className="text-center md:text-left">
           <p className="text-sm">&copy; {new Date().getFullYear()} Sylvan Groot</p>
           <a
-            href="mailto:sylvangroot90@gmail.com"
+            href="mailto:Sylvan.Groot@outlook.com"
             className="text-sm text-blue-600 hover:underline"
           >
-            sylvangroot90@gmail.com
+            Sylvan.Groot@outlook.com
           </a>
         </div>
 
