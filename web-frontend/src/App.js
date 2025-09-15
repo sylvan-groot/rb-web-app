@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="px-8 sm:px-16 content">
+      <div className="px-8 sm:px-16 content bg-gradient-to-b from-[#FAF5EB] to-[#F9F9F9] min-h-screen">
         <nav className="flex items-center justify-between py-4 border-b border-gray-300">
           <div className="text-2xl font-bold text-blue-600">Sylvan Groot</div>
           <div className="flex items-center gap-4">
@@ -43,19 +43,16 @@ function App() {
           </div>
           <div className="md:w-1/2 flex justify-center md:justify-center">
             <div className="relative">
-              <div className="absolute w-72 h-72 bg-red-200 rounded-full -right-10 -top-10 opacity-30"></div>
-              <div className="absolute w-56 h-56 bg-red-400 rounded-full right-0 top-20 opacity-10"></div>
-              <div className="absolute w-60 h-60 bg-red-300 rounded-full right-20 top-30 opacity-20"></div>
               <img
-                src=""
+                src="blob-profile-2.png"
                 alt="Profile"
-                className="w-64 h-64 rounded-full relative z-10"
+                className="w-128 h-128"
               />
             </div>
           </div>
         </div>
-        <div className='py-4 border-b border-gray-300' id="about"/>
-        <div className="text-center my-8 max-w-2xl mx-auto">      
+        <div className='py-4 border-b border-gray-300' id="about" />
+        <div className="text-center my-8 max-w-2xl mx-auto">
           <h1 className='text-4xl font-bold text-blue-600 mt-8'>Who am I</h1>
           <div className="flex items-center justify-between">
             <p className='text-xl text-gray-700 mt-4 text-left'>
@@ -78,7 +75,7 @@ function App() {
             <GraduationCap className="w-14 h-14 text-gray-500 opacity-70 flex-shrink-0 mt-10" />
           </div>
         </div>
-        <div className='py-4 border-b border-gray-300' id="experience"/>
+        <div className='py-4 border-b border-gray-300' id="experience" />
         <div className="text-center my-8 max-w-3xl mx-auto">
           <h1 className='text-4xl font-bold text-blue-600 mt-16'>Programming experience</h1>
           <p className='text-xl text-gray-700 mt-8'>
@@ -92,27 +89,31 @@ function App() {
           </p>
           <Skills />
         </div>
-        <div className='py-4 border-b border-gray-300' id="projects"/>
+        <div className='py-4 border-b border-gray-300' id="projects" />
         <div className="text-center my-8 max-w-3xl mx-auto">
           <h1 className='text-4xl font-bold text-blue-600 mt-16'>Projects</h1>
           <p className='text-xl text-gray-700 mt-4'>
             Here are some of the projects I have worked on:
           </p>
-          <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition mt-16">
+          <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition mt-8">
+            <h2 className="text-2xl font-bold text-blue-600 mt-2 mb-4">Project mapbox markers</h2>
             <img
-              src="/images/project1.png"
+              src="mapbox.png"
               alt="Project 1"
-              className="w-full h-48 object-cover"
+              className="mx-auto mb-2"
             />
             <div className="p-6">
-              <h2 className="text-2xl font-bold text-blue-600">Project</h2>
-              <p className="text-gray-700 mt-2">
-                Project Description
+              <p className="text-gray-700">
+                Create, manage and cluster custom markers by submitting information on a specific GPS-coordinate. 
+                This project utilizes the MapBox GL JS plugin to display an interactive map with the markers.
+                Features include adding, editing, deleting using PostgreSQL and filtering markers based on categories.
+                The database was hosted using AWS RDS (Relational Database Service) for extra security.
               </p>
               <div className="flex justify-between items-center mt-4">
-                <span className="text-sm text-gray-500">React • Node.js</span>
+                <span className="text-sm text-gray-500">Vue • Java • Node.js</span>
                 <a
-                  href="https://github.com/yourusername/project1"
+                  target="_blank"
+                  href="https://github.com/sylvan-groot/Sumting-Mapbox"
                   className="text-blue-600 hover:underline"
                 >
                   GitHub →
@@ -122,20 +123,22 @@ function App() {
           </div>
 
           <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition mt-16">
+            <h2 className="text-2xl font-bold text-blue-600 mt-2 mb-4">Project RTL text-detection</h2>
             <img
-              src="/images/project1.png"
-              alt="Project 1"
-              className="w-full h-48 object-cover"
+              src="rtl.png"
+              alt="Project 2"
+              className="mx-auto mb-2"
             />
             <div className="p-6">
-              <h2 className="text-2xl font-bold text-blue-600">Project</h2>
-              <p className="text-gray-700 mt-2">
-                Project Description
+              <p className="text-gray-700">
+                This project uses AI based text-detection models such as EasyOCR and PyTesseract to detect and extract text from images.
+                The main goal of this project was to create an application that can process both images and videos and return the frames containing text.
               </p>
               <div className="flex justify-between items-center mt-4">
-                <span className="text-sm text-gray-500">React • Node.js</span>
+                <span className="text-sm text-gray-500">Python</span>
                 <a
-                  href="https://github.com/yourusername/project1"
+                  target="_blank"
+                  href="https://github.com/sylvan-groot/RTL_Text_Detection_AI_Migrated"
                   className="text-blue-600 hover:underline"
                 >
                   GitHub →
@@ -145,20 +148,23 @@ function App() {
           </div>
 
           <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition mt-16">
+            <h2 className="text-2xl font-bold text-blue-600 mt-2 mb-4">Project Pet-connect</h2>
             <img
-              src="/images/project1.png"
-              alt="Project 1"
-              className="w-full h-48 object-cover"
+              src="pet-connect.png"
+              alt="Project 3"
+              className="mx-auto mb-2"
             />
             <div className="p-6">
-              <h2 className="text-2xl font-bold text-blue-600">Project</h2>
-              <p className="text-gray-700 mt-2">
-                Project Description
+              <p className="text-gray-700">
+                A platform created to help adoption shelters reach a larger audience and help more pets find a loving home.
+                The platform allows shelters to create profiles for their pets, manage adoptions and connect with potential adopters.
+                Built using Vue.js as the frontend framework and Django REST framework for the backend. The data is stored in a MySQL database within a Dockerized backend and is integrated using Azure services.
               </p>
               <div className="flex justify-between items-center mt-4">
-                <span className="text-sm text-gray-500">React • Node.js</span>
+                <span className="text-sm text-gray-500">Vue • Python • Node.js</span>
                 <a
-                  href="https://github.com/yourusername/project1"
+                  target="_blank"
+                  href="https://github.com/sylvan-groot/Pet_Connect_Migrated"
                   className="text-blue-600 hover:underline"
                 >
                   GitHub →
