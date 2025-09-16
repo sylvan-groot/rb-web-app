@@ -10,7 +10,8 @@ target/web-backend-0.0.1-SNAPSHOT.jar.original
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-
+.env
+src/main/resources/application-local.properties
 
 ### STS ###
 .apt_generated
