@@ -1,10 +1,9 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import Button from './components/button';
 import Footer from './components/Footer';
-import Skills from './components/skills';
+import Skills from './components/Skills';
+import Navbar from './components/Navbar';
 import { User, Puzzle, GraduationCap } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function App() {
   const [data, setData] = useState("");
@@ -19,25 +18,13 @@ function App() {
   return (
     <div className="App">
       <div className="px-8 sm:px-16 content bg-gradient-to-b from-[#FAF5EB] to-[#F9F9F9] min-h-screen">
-        <nav className="flex items-center justify-between py-4 border-b border-gray-300">
-          <div className="text-2xl font-bold text-blue-600">Sylvan Groot</div>
-          <div className="flex items-center gap-4">
-            <Button href="#about">About</Button>
-            <Button href="#experience">Experience</Button>
-            <Button href="#projects">Projects</Button>
-            <Button href="mailto:Sylvan.Groot@outlook.com">Contact</Button>
-            <a href="https://github.com/sylvan-groot" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="w-6 h-6 text-gray-700 hover:text-blue-600 transition" />
-            </a>
-            <a href="https://linkedin.com/in/sylvan-groot-a49412176" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="w-6 h-6 text-gray-700 hover:text-blue-600 transition" />
-            </a>
-          </div>
-        </nav>
-        <div className="min-h-[88vh] flex flex-col md:flex-row items-center justify-between px-6 md:px-4">
-          <div className="md:w-1/2 w-full text-left">
-            <h2 className='text-5xl font-bold text-blue-700 mb-2'>Welcome!</h2>
-            <h2 className="text-3xl text-gray-700 mb-20">
+        <Navbar />
+        <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-4 min-h-0 md:min-h-[88vh]">
+          <div className="md:w-1/2 w-full text-left pt-8 sm:pt-12 md:pt-0">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-700 mb-2">
+              Welcome!
+            </h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-700 mb-12 md:mb-20">
               I'm Sylvan. I build modern web applications using React and Spring Boot.
             </h2>
           </div>
@@ -46,7 +33,7 @@ function App() {
               <img
                 src="blob-profile-2.png"
                 alt="Profile"
-                className="w-128 h-128"
+                className="w-48 h-48 sm:w-64 sm:h-64 md:w-full md:h-full"
               />
             </div>
           </div>
@@ -55,21 +42,21 @@ function App() {
         <div className="text-center my-8 max-w-2xl mx-auto">
           <h1 className='text-4xl font-bold text-blue-600 mt-8'>Who am I</h1>
           <div className="flex items-center justify-between">
-            <p className='text-xl text-gray-700 mt-4 text-left'>
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
               24 Year old software developer from the Netherlands. I have been learning programming for 8 years now and have experience with various programming languages and frameworks.
             </p>
             <User className="w-16 h-16 text-gray-500 opacity-70 flex-shrink-0" />
           </div>
 
           <div className="flex items-center justify-between">
-            <p className='text-xl text-gray-700 mt-12 text-left'>
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
               My interest in programming started because I wanted to work with computers and I was also great at puzzle solving. I have since then been developing my skills on many different sides of IT.
             </p>
             <Puzzle className="w-14 h-14 text-gray-500 opacity-70 flex-shrink-0 mt-10" />
           </div>
 
           <div className="flex items-center justify-between">
-            <p className='text-xl text-gray-700 mt-12 text-left'>
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
               I have finished my bachelor's degree in HBO-ICT and gained practical experience through internships and personal projects.
             </p>
             <GraduationCap className="w-14 h-14 text-gray-500 opacity-70 flex-shrink-0 mt-10" />
@@ -78,7 +65,7 @@ function App() {
         <div className='py-4 border-b border-gray-300' id="experience" />
         <div className="text-center my-8 max-w-3xl mx-auto">
           <h1 className='text-4xl font-bold text-blue-600 mt-16'>Programming experience</h1>
-          <p className='text-xl text-gray-700 mt-8'>
+          <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
             I have worked with many different programming languages and frameworks during my studies and internships.
             My experience between languages varies based on how much I have worked with them.
             Below is an overview of how I rate my proficiency with these technologies.
@@ -92,7 +79,7 @@ function App() {
         <div className='py-4 border-b border-gray-300' id="projects" />
         <div className="text-center my-8 max-w-3xl mx-auto">
           <h1 className='text-4xl font-bold text-blue-600 mt-16'>Projects</h1>
-          <p className='text-xl text-gray-700 mt-4'>
+          <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
             Here are some of the projects I have worked on:
           </p>
           <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition mt-8">
