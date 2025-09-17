@@ -2,7 +2,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import Footer from './components/Footer';
 import Skills from './components/Skills';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar';
 import { User, Puzzle, GraduationCap } from "lucide-react";
 
 function App() {
@@ -31,9 +31,9 @@ function App() {
           <div className="md:w-1/2 flex justify-center md:justify-center">
             <div className="relative">
               <img
-                src="blob-profile-2.png"
+                src="blob-profile-v3.png"
                 alt="Profile"
-                className="w-48 h-48 sm:w-64 sm:h-64 md:w-full md:h-full"
+                className="w-auto h-48 sm:w-auto sm:h-64 md:w-full md:h-[32rem]"
               />
             </div>
           </div>
@@ -52,14 +52,14 @@ function App() {
             <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
               My interest in programming started because I wanted to work with computers and I was also great at puzzle solving. I have since then been developing my skills on many different sides of IT.
             </p>
-            <Puzzle className="w-14 h-14 text-gray-500 opacity-70 flex-shrink-0 mt-10" />
+            <Puzzle className="w-14 h-14 text-gray-500 opacity-70 flex-shrink-0 mt-5" />
           </div>
 
           <div className="flex items-center justify-between">
             <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
               I have finished my bachelor's degree in HBO-ICT and gained practical experience through internships and personal projects.
             </p>
-            <GraduationCap className="w-14 h-14 text-gray-500 opacity-70 flex-shrink-0 mt-10" />
+            <GraduationCap className="w-14 h-14 text-gray-500 opacity-70 flex-shrink-0 mt-5" />
           </div>
         </div>
         <div className='py-4 border-b border-gray-300' id="experience" />

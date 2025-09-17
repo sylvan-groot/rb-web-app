@@ -4,6 +4,11 @@ import Button from "./Button";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [language, setLanguage] = useState("EN");
+
+  const toggleLanguage = () => {
+    setLanguage((prev) => (prev === "EN" ? "NL" : "EN"));
+  }
 
   return (
     <nav className="flex items-center justify-between py-4 border-b border-gray-300 relative">
@@ -11,6 +16,7 @@ function Navbar() {
         Sylvan Groot
       </div>
 
+      {/* Desktop view */}
       <div className="hidden md:flex items-center gap-4">
         <Button href="#about">About</Button>
         <Button href="#experience">Experience</Button>
@@ -30,8 +36,15 @@ function Navbar() {
         >
           <FaLinkedin className="w-6 h-6 text-gray-700 hover:text-blue-600 transition" />
         </a>
+        <button
+          onClick={toggleLanguage}
+          className="px-3 py-1 rounded-lg text-sm bg-gray-700 text-white hover:bg-blue-600 transition"
+        >
+          {language}
+        </button>
       </div>
 
+      {/* Pop-up Menu */}
       <div className="md:hidden">
         <button
           className="p-2 rounded-lg hover:bg-gray-200"
@@ -41,6 +54,7 @@ function Navbar() {
         </button>
       </div>
 
+      {/* Mobile view */}
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-md flex flex-col items-center gap-4 py-6 md:hidden z-50">
           <Button href="#about" onClick={() => setIsOpen(false)}>About</Button>
@@ -62,6 +76,13 @@ function Navbar() {
             >
               <FaLinkedin className="w-6 h-6 text-gray-700 hover:text-blue-600 transition" />
             </a>
+            {/* Language button mobile */}
+            <button
+              onClick={toggleLanguage}
+              className="px-3 rounded-lg text-sm bg-gray-700 text-white hover:bg-blue-600 transition"
+            >
+              {language}
+            </button>
           </div>
         </div>
       )}
