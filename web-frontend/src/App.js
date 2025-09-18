@@ -105,7 +105,7 @@ function App() {
             />
             <div className="p-6">
               <p className="text-gray-700">
-                Create, manage and cluster custom markers by submitting information on a specific GPS-coordinate. 
+                Create, manage and cluster custom markers by submitting information on a specific GPS-coordinate.
                 This project utilizes the MapBox GL JS plugin to display an interactive map with the markers.
                 Features include adding, editing, deleting using PostgreSQL and filtering markers based on categories.
                 The database was hosted using AWS RDS (Relational Database Service) for extra security.
