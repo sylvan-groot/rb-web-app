@@ -4,29 +4,39 @@ import '../App.css';
 
 const skillSets = {
   Frontend: [
-    { name: "Java", exp: 85 },
-    { name: "Python", exp: 75 },
     { name: "JavaScript", exp: 70 },
-    { name: "SQL", exp: 65 }
+    { name: "React", exp: 80 },
+    { name: "React Native", exp: 60 },
+    { name: "Vue.js", exp: 70 },
+    { name: "Tailwind CSS", exp: 60 },
+    { name: "Bootstrap", exp: 50 }
   ],
   Backend: [
-    { name: "React", exp: 80 },
-    { name: "Spring Boot", exp: 70 },
-    { name: "Node.js", exp: 60 },
-    { name: "Express.js", exp: 55 }
+    { name: "Python", exp: 80 },
+    { name: "Java", exp: 70 },
+    { name: "Node.js", exp: 75 },
+    { name: "PHP", exp: 50 }
   ],
   Frameworks: [
-    { name: "Tailwind CSS", exp: 75 },
-    { name: "Bootstrap", exp: 65 },
-    { name: "Django", exp: 50 },
-    { name: "Flask", exp: 45 }
+    { name: "Spring Boot", exp: 60 },
+    { name: "Express.js", exp: 40 },
+    { name: "Django", exp: 80 },
+    { name: "Flask", exp: 80 },
+    { name: "FastAPI", exp: 70 },
+  ],
+  Databases: [
+    { name: "MySQL / MariaDB - SQL", exp: 80 },
+    { name: "PostgreSQL - SQL", exp: 70 },
+    { name: "MongoDB - NoSQL", exp: 60 },
+    { name: "Data modeling & ER diagrams", exp: 70 }
   ],
   Other: [
     { name: "Git", exp: 80 },
     { name: "Docker", exp: 70 },
-    { name: "AWS", exp: 60 },
-    { name: "Linux", exp: 55 },
-    { name: "Agile Methodologies", exp: 50 }
+    { name: "AWS", exp: 50 },
+    { name: "Linux", exp: 50 },
+    { name: "Agile work methods", exp: 70 },
+    { name: "AI technology", exp: 80 }
   ]
 };
 

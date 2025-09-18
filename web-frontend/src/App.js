@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Footer from './components/Footer';
 import Skills from './components/Skills';
 import Navbar from './components/navbar';
-import { User, Puzzle, GraduationCap } from "lucide-react";
+import { User, Puzzle, GraduationCap, ChevronDown } from "lucide-react";
 
 function App() {
   const [data, setData] = useState("");
@@ -15,6 +15,13 @@ function App() {
       .catch((err) => console.error("Fetch error:", err));
   }, []);
 
+  const handleScrollToAbout = () => {
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="App">
       <div className="px-8 sm:px-16 content bg-gradient-to-b from-[#FAF5EB] to-[#F9F9F9] min-h-screen">
@@ -22,11 +29,18 @@ function App() {
         <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-4 min-h-0 md:min-h-[88vh]">
           <div className="md:w-1/2 w-full text-left pt-8 sm:pt-12 md:pt-0">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-700 mb-2">
-              Welcome!
+              Hi, I'm Sylvan
             </h2>
             <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-700 mb-12 md:mb-20">
-              I'm Sylvan. I build modern web applications using React and Spring Boot.
+              A software developer with experience on many different parts of the field.
+              I develope web applications, backend services, manage databases, and more.
             </h2>
+            <button
+              className="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition"
+              onClick={handleScrollToAbout}
+            >
+              About me <ChevronDown className="inline-block" size={30} />
+            </button>
           </div>
           <div className="md:w-1/2 flex justify-center md:justify-center">
             <div className="relative">
