@@ -3,5 +3,23 @@
         "greeting": "Hi, I'm Sylvan",
         "subtitle": "A junior software developer with experience on many different parts of the field. I develop web applications, backend services, manage databases, and more.",
         "about": "About me"
+    },
+    "whoami": {
+        "title": "Who am I",
+        "para1": "My name is Sylvan Groot, I'm a 24 Year old software developer from the Netherlands. I have been programming for 8 years now and have experience with various programming languages, frameworks and techniques.",
+        "para2": "What started as interest and curiousity with computers and problem-solving has grown into learning more about programming applications using different methods and languages. Over the years, I’ve explored different areas of IT from web development to AI, from backend systems to database design. This wide exposure has helped me adapt quickly to new technical challenges.",
+        "para3": "I have recently graduated with a bachelor’s degree in HBO-ICT Software Engineering, during which I gained not only theoretical knowledge but also practical experience through several internships and real-world projects. These experiences have taught me how to work in teams, write maintainable code and deliver solutions."
+    },
+    "experience": {
+        "title": "Programming experience",
+        "subtitle": "I’ve worked with a variety of programming languages and frameworks through my studies and internships. How comfortable I am with each one depends on how much I’ve used it in real projects. Below is an overview of how I’d rate myself using this technology.",
+        "others": "Others"
+    },
+    "projects": {
+        "title": "Projects",
+        "subtitle": "Here are some of the projects I've worked on, showcasing my skills and experience in software development.",
+        "proj1": "Create, manage and cluster custom markers by submitting information on a specific GPS-coordinate. This project utilizes the MapBox GL JS plugin to display an interactive map with the markers. Features include adding, editing, deleting using PostgreSQL and filtering markers based on categories. The database was hosted using AWS RDS (Relational Database Service) for extra security.",
+        "proj2": "This project uses AI based text-detection models such as EasyOCR and PyTesseract to detect and extract text from images. The main goal of this project was to create an application that can process both images and videos and return the frames containing text.",
+        "proj3": "A platform created to help adoption shelters reach a larger audience and help more pets find a loving home. The platform allows shelters to create profiles for their pets, manage adoptions and connect with potential adopters. Built using Vue.js as the frontend framework and Django REST framework for the backend. The data is stored in a MySQL database within a Dockerized backend and is integrated using Azure services."
     }
 }

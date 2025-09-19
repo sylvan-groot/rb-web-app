@@ -3,5 +3,23 @@
         "greeting": "Hoi, ik ben Sylvan",
         "subtitle": "Een junior softwareontwikkelaar met ervaring in verschillende vlaktes. Ik ontwikkel webapplicaties, backendservices, beheer databases en meer.",
         "about": "Over mij"
+    },
+    "whoami": {
+        "title": "Wie ben ik",
+        "para1": "Mijn naam is Sylvan Groot, ik ben een 24-jarige softwareontwikkelaar uit Nederland. Ik programmeer nu al 8 jaar en heb ervaring met verschillende programmeertalen, frameworks en technieken.",
+        "para2": "Wat begon als interesse en nieuwsgierigheid naar computers en probleemoplossing, is uitgegroeid tot het leren programmeren van applicaties met verschillende methoden en talen. In de loop der jaren heb ik verschillende gebieden van IT verkend, van webontwikkeling tot AI, van backendsystemen tot databaseontwerp. Deze brede blootstelling heeft me geholpen om me snel aan te passen aan nieuwe technische uitdagingen.",
+        "para3": "Ik ben onlangs afgestudeerd met een bachelordiploma in HBO-ICT Software Engineering, waarbij ik niet alleen theoretische kennis heb opgedaan, maar ook praktische ervaring door verschillende stages en real-world projecten. Deze ervaringen hebben me geleerd hoe ik in teams moet werken, onderhoudbare code moet schrijven en oplossingen moet leveren."
+    },
+    "experience": {
+        "title": "Programmeer vaardigheden",
+        "subtitle": "Ik heb gewerkt met verschillende programmeertalen en frameworks tijdens mijn studie en stages. Hoe comfortabel ik ben met elk van hen hangt af van hoe vaak ik ze in projecten heb toegepast. Hieronder is een overzicht van hoe ik mezelf beoordeel in het gebruik van deze technologieën.",
+        "others": "Overige"
+    },
+    "projects": {
+        "title": "Projecten",
+        "subtitle": "Hier zijn enkele projecten waaraan ik heb gewerkt, die mijn vaardigheden en ervaring in softwareontwikkeling laten zien.",
+        "proj1": "Maak, beheer en groepeer aangepaste markers door informatie in te dienen op een specifieke GPS-coördinaat. Dit project maakt gebruik van de MapBox GL JS-plugin om een interactieve kaart met de markers weer te geven. Functies zijn onder andere toevoegen, bewerken, verwijderen met PostgreSQL en het filteren van markers op categorieën. De database werd gehost met AWS RDS (Relational Database Service) voor extra beveiliging.",
+        "proj2": "Dit project maakt gebruik van AI-gebaseerde tekstdetectiemodellen zoals EasyOCR en PyTesseract om tekst in afbeeldingen te detecteren en extraheren. Het hoofddoel van dit project was het creëren van een applicatie die zowel afbeeldingen als video's kan verwerken en de frames met tekst kan retourneren.",
+        "proj3": "Een platform gemaakt om adoptieshelters te helpen een groter publiek te bereiken en meer huisdieren te helpen een liefdevol thuis te vinden. Het platform stelt shelters in staat om profielen voor hun huisdieren aan te maken, adopties te beheren en in contact te komen met potentiële adoptanten. Gebouwd met Vue.js als frontend-framework en Django REST-framework voor de backend. De gegevens worden opgeslagen in een MySQL-database binnen een gedockeriseerde backend en zijn geïntegreerd met behulp van Azure-services."
     }
 }

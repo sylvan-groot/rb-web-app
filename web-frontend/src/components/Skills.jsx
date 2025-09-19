@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Button from './Button';
+import Button from './button';
 import '../App.css';
 
 const skillSets = {

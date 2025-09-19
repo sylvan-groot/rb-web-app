@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
-import Button from "./Button";
+import Button from "./button";
 import { useTranslation } from "react-i18next";
 
 function Navbar() {

@@ -1,7 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import Footer from './components/Footer';
-import Skills from './components/Skills';
+import Footer from './components/footer';
+import Skills from './components/skills';
 import Navbar from './components/navbar';
 import { User, Puzzle, GraduationCap, ChevronDown } from "lucide-react";
 import { useTranslation } from 'react-i18next';
@@ -54,38 +54,34 @@ function App() {
           </div>
         </div>
         <div className='py-4 border-b border-gray-300' id="about" />
-        <div className="text-center my-8 max-w-2xl mx-auto">
-          <h1 className='text-4xl font-bold text-blue-600 mt-8'>Who am I</h1>
+        <div className="text-center my-8 max-w-3xl mx-auto">
+          <h1 className='text-4xl font-bold text-blue-600 mt-8'>{t("whoami.title")}</h1>
           <div className="flex items-center justify-between">
             <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
-              My name is Sylvan Groot, I'm a 24 Year old software developer from the Netherlands. 
-              I have been learning programming for 8 years now and have experience with various programming languages, frameworks and techniques.
+              {t("whoami.para1")}
             </p>
-            <User className="w-16 h-16 text-gray-500 opacity-70 flex-shrink-0" />
+            <User className="w-16 h-16 text-gray-500 opacity-70 flex-shrink-0 ml-2" />
           </div>
 
           <div className="flex items-center justify-between">
             <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
-              My interest in programming started because I wanted to work with computers and I was also great at puzzle solving. 
-              I have since then been developing my skills on many different sides of IT.
+              {t("whoami.para2")}
             </p>
-            <Puzzle className="w-14 h-14 text-gray-500 opacity-70 flex-shrink-0 mt-5" />
+            <Puzzle className="w-14 h-14 text-gray-500 opacity-70 flex-shrink-0 ml-2" />
           </div>
 
           <div className="flex items-center justify-between">
             <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
-              I have finished my bachelor's degree in HBO-ICT and gained practical experience through internships and personal projects.
+              {t("whoami.para3")}
             </p>
-            <GraduationCap className="w-14 h-14 text-gray-500 opacity-70 flex-shrink-0 mt-5" />
+            <GraduationCap className="w-14 h-14 text-gray-500 opacity-70 flex-shrink-0 ml-2" />
           </div>
         </div>
         <div className='py-4 border-b border-gray-300' id="experience" />
         <div className="text-center my-8 max-w-3xl mx-auto">
-          <h1 className='text-4xl font-bold text-blue-600 mt-16'>Programming experience</h1>
+          <h1 className='text-4xl font-bold text-blue-600 mt-16'>{t("experience.title")}</h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
-            I have worked with many different programming languages and frameworks during my studies and internships.
-            My experience between languages varies based on how much I have worked with them.
-            Below is an overview of how I rate my proficiency with these technologies.
+            {t("experience.subtitle")}
             {/* Frontend: HTML • CSS • JavaScript • React • Tailwind CSS<br/>
             Backend: Java • Spring Boot • Node.js • Express.js<br/>
             Database: MySQL • PostgreSQL • MongoDB<br/>
@@ -95,9 +91,9 @@ function App() {
         </div>
         <div className='py-4 border-b border-gray-300' id="projects" />
         <div className="text-center my-8 max-w-3xl mx-auto">
-          <h1 className='text-4xl font-bold text-blue-600 mt-16'>Projects</h1>
+          <h1 className='text-4xl font-bold text-blue-600 mt-16'>{t("projects.title")}</h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
-            Here are some of the projects I have worked on:
+            {t("projects.subtitle")}
           </p>
           <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition mt-8">
             <h2 className="text-2xl font-bold text-blue-600 mt-2 mb-4">Project mapbox markers</h2>
@@ -108,10 +104,7 @@ function App() {
             />
             <div className="p-6">
               <p className="text-gray-700">
-                Create, manage and cluster custom markers by submitting information on a specific GPS-coordinate.
-                This project utilizes the MapBox GL JS plugin to display an interactive map with the markers.
-                Features include adding, editing, deleting using PostgreSQL and filtering markers based on categories.
-                The database was hosted using AWS RDS (Relational Database Service) for extra security.
+                {t("projects.proj1")}
               </p>
               <div className="flex justify-between items-center mt-4">
                 <span className="text-sm text-gray-500">Vue • Java • Node.js</span>
@@ -135,8 +128,7 @@ function App() {
             />
             <div className="p-6">
               <p className="text-gray-700">
-                This project uses AI based text-detection models such as EasyOCR and PyTesseract to detect and extract text from images.
-                The main goal of this project was to create an application that can process both images and videos and return the frames containing text.
+                {t("projects.proj2")}
               </p>
               <div className="flex justify-between items-center mt-4">
                 <span className="text-sm text-gray-500">Python</span>
@@ -160,9 +152,7 @@ function App() {
             />
             <div className="p-6">
               <p className="text-gray-700">
-                A platform created to help adoption shelters reach a larger audience and help more pets find a loving home.
-                The platform allows shelters to create profiles for their pets, manage adoptions and connect with potential adopters.
-                Built using Vue.js as the frontend framework and Django REST framework for the backend. The data is stored in a MySQL database within a Dockerized backend and is integrated using Azure services.
+                {t("projects.proj3")}
               </p>
               <div className="flex justify-between items-center mt-4">
                 <span className="text-sm text-gray-500">Vue • Python • Node.js</span>
