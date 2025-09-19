@@ -58,14 +58,16 @@ function App() {
           <h1 className='text-4xl font-bold text-blue-600 mt-8'>Who am I</h1>
           <div className="flex items-center justify-between">
             <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
-              24 Year old software developer from the Netherlands. I have been learning programming for 8 years now and have experience with various programming languages and frameworks.
+              My name is Sylvan Groot, I'm a 24 Year old software developer from the Netherlands. 
+              I have been learning programming for 8 years now and have experience with various programming languages, frameworks and techniques.
             </p>
             <User className="w-16 h-16 text-gray-500 opacity-70 flex-shrink-0" />
           </div>
 
           <div className="flex items-center justify-between">
             <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
-              My interest in programming started because I wanted to work with computers and I was also great at puzzle solving. I have since then been developing my skills on many different sides of IT.
+              My interest in programming started because I wanted to work with computers and I was also great at puzzle solving. 
+              I have since then been developing my skills on many different sides of IT.
             </p>
             <Puzzle className="w-14 h-14 text-gray-500 opacity-70 flex-shrink-0 mt-5" />
           </div>
