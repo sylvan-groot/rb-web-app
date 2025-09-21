@@ -13,7 +13,11 @@
     "experience": {
         "title": "Programmeer vaardigheden",
         "subtitle": "Ik heb gewerkt met verschillende programmeertalen en frameworks tijdens mijn studie en stages. Hoe comfortabel ik ben met elk van hen hangt af van hoe vaak ik ze in projecten heb toegepast. Hieronder is een overzicht van hoe ik mezelf beoordeel in het gebruik van deze technologieën.",
-        "others": "Overige"
+        "Frontend": "Frontend",
+        "Backend": "Backend",
+        "Frameworks": "Frameworks",
+        "Databases": "Databases",
+        "Other": "Overige"
     },
     "projects": {
         "title": "Projecten",
@@ -21,5 +25,11 @@
         "proj1": "Maak, beheer en groepeer aangepaste markers door informatie in te dienen op een specifieke GPS-coördinaat. Dit project maakt gebruik van de MapBox GL JS-plugin om een interactieve kaart met de markers weer te geven. Functies zijn onder andere toevoegen, bewerken, verwijderen met PostgreSQL en het filteren van markers op categorieën. De database werd gehost met AWS RDS (Relational Database Service) voor extra beveiliging.",
         "proj2": "Dit project maakt gebruik van AI-gebaseerde tekstdetectiemodellen zoals EasyOCR en PyTesseract om tekst in afbeeldingen te detecteren en extraheren. Het hoofddoel van dit project was het creëren van een applicatie die zowel afbeeldingen als video's kan verwerken en de frames met tekst kan retourneren.",
         "proj3": "Een platform gemaakt om adoptieshelters te helpen een groter publiek te bereiken en meer huisdieren te helpen een liefdevol thuis te vinden. Het platform stelt shelters in staat om profielen voor hun huisdieren aan te maken, adopties te beheren en in contact te komen met potentiële adoptanten. Gebouwd met Vue.js als frontend-framework en Django REST-framework voor de backend. De gegevens worden opgeslagen in een MySQL-database binnen een gedockeriseerde backend en zijn geïntegreerd met behulp van Azure-services."
+    },
+    "nav": {
+        "about": "Over mij",
+        "experience": "Ervaring",
+        "projects": "Projecten",
+        "contact": "Contact"
     }
 }

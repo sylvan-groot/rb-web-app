@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Button from './button';
 import '../App.css';
 
@@ -43,6 +44,7 @@ const skillSets = {
 function Skills() {
     const [visible, setVisible] = useState(false);
     const [selected, setSelected] = useState("Frontend");
+    const { t } = useTranslation();
 
     useEffect(() => {
         setVisible(true);
@@ -63,7 +65,7 @@ function Skills() {
             }`}
             onClick={() => setSelected(key)}
           >
-            {key}
+            {t(`experience.${key}`)}
           </Button>
         ))}
       </div>

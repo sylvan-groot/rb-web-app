@@ -1,6 +1,9 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation(); 
+
   return (
     <footer className="bg-gray-100 text-gray-600 py-8 mt-0">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between px-6">
@@ -16,10 +19,10 @@ function Footer() {
         </div>
 
         <div className="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 mt-4 md:mt-0">
-          <a href="#about" className="hover:text-blue-600">About</a>
-          <a href="#projects" className="hover:text-blue-600">Projects</a>
-          <a href="#experience" className="hover:text-blue-600">Experience</a>
-          <a href="mailto:Sylvan.Groot@outlook.com" className="hover:text-blue-600">Contact</a>
+          <a href="#about" className="hover:text-blue-600">{t("nav.about")}</a>
+          <a href="#projects" className="hover:text-blue-600">{t("nav.projects")}</a>
+          <a href="#experience" className="hover:text-blue-600">{t("nav.experience")}</a>
+          <a href="mailto:Sylvan.Groot@outlook.com" className="hover:text-blue-600">{t("nav.contact")}</a>
           <a
             href="https://github.com/sylvan-groot"
             target="_blank"

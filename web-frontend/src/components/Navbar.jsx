@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState("EN");
   const currentLang = i18n.language === "nl" ? "NL" : "EN";
 
@@ -22,10 +22,10 @@ function Navbar() {
 
       {/* Desktop view */}
       <div className="hidden md:flex items-center gap-4">
-        <Button href="#about">About</Button>
-        <Button href="#experience">Experience</Button>
-        <Button href="#projects">Projects</Button>
-        <Button href="mailto:Sylvan.Groot@outlook.com">Contact</Button>
+        <Button href="#about">{t("nav.about")}</Button>
+        <Button href="#experience">{t("nav.experience")}</Button>
+        <Button href="#projects">{t("nav.projects")}</Button>
+        <Button href="mailto:Sylvan.Groot@outlook.com">{t("nav.contact")}</Button>
         <a
           href="https://github.com/sylvan-groot"
           target="_blank"
@@ -61,10 +61,10 @@ function Navbar() {
       {/* Mobile view */}
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-md flex flex-col items-center gap-4 py-6 md:hidden z-50">
-          <Button href="#about" onClick={() => setIsOpen(false)}>About</Button>
-          <Button href="#experience" onClick={() => setIsOpen(false)}>Experience</Button>
-          <Button href="#projects" onClick={() => setIsOpen(false)}>Projects</Button>
-          <Button href="mailto:Sylvan.Groot@outlook.com" onClick={() => setIsOpen(false)}>Contact</Button>
+          <Button href="#about" onClick={() => setIsOpen(false)}>{t("nav.about")}</Button>
+          <Button href="#experience" onClick={() => setIsOpen(false)}>{t("nav.about")}</Button>
+          <Button href="#projects" onClick={() => setIsOpen(false)}>{t("nav.projects")}</Button>
+          <Button href="mailto:Sylvan.Groot@outlook.com" onClick={() => setIsOpen(false)}>{t("nav.contact")}</Button>
           <div className="flex gap-6 mt-2">
             <a
               href="https://github.com/sylvan-groot"

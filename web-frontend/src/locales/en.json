@@ -13,7 +13,11 @@
     "experience": {
         "title": "Programming experience",
         "subtitle": "I’ve worked with a variety of programming languages and frameworks through my studies and internships. How comfortable I am with each one depends on how much I’ve used it in real projects. Below is an overview of how I’d rate myself using this technology.",
-        "others": "Others"
+        "Frontend": "Frontend",
+        "Backend": "Backend",
+        "Frameworks": "Frameworks",
+        "Databases": "Databases",
+        "Other": "Other"
     },
     "projects": {
         "title": "Projects",
@@ -21,5 +25,11 @@
         "proj1": "Create, manage and cluster custom markers by submitting information on a specific GPS-coordinate. This project utilizes the MapBox GL JS plugin to display an interactive map with the markers. Features include adding, editing, deleting using PostgreSQL and filtering markers based on categories. The database was hosted using AWS RDS (Relational Database Service) for extra security.",
         "proj2": "This project uses AI based text-detection models such as EasyOCR and PyTesseract to detect and extract text from images. The main goal of this project was to create an application that can process both images and videos and return the frames containing text.",
         "proj3": "A platform created to help adoption shelters reach a larger audience and help more pets find a loving home. The platform allows shelters to create profiles for their pets, manage adoptions and connect with potential adopters. Built using Vue.js as the frontend framework and Django REST framework for the backend. The data is stored in a MySQL database within a Dockerized backend and is integrated using Azure services."
+    },
+    "nav": {
+        "about": "About",
+        "experience": "Experience",
+        "projects": "Projects",
+        "contact": "Contact"
     }
 }
