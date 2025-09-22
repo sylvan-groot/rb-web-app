@@ -37,7 +37,7 @@ function App() {
               {t("front.subtitle")}
             </h2>
             <button
-              className="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition"
+              className="hidden md:inline-block bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition"
               onClick={handleScrollToAbout}
             >
               {t("front.about")} <ChevronDown className="inline-block" size={30} />
