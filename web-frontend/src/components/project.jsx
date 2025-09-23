@@ -1,7 +1,7 @@
 function Project({ name, desc, languages, imgUrl, gitRepoLink }) {
   return (
     <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition mt-8">
-      <h2 className="text-2xl font-bold text-blue-600 mt-2 mb-4">{name}</h2>
+      <h2 className="text-center text-2xl font-bold text-blue-600 mt-2 mb-4">{name}</h2>
 
       {imgUrl && (
         <img

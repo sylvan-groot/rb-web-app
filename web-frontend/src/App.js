@@ -66,8 +66,8 @@ function App() {
           </div>
         </div>
         <div className='py-4 border-b border-gray-300' id="about" />
-        <div className="text-center my-8 max-w-3xl mx-auto">
-          <h1 className='text-4xl font-bold text-blue-600 mt-8'>{t("whoami.title")}</h1>
+        <div className="my-8 max-w-3xl mx-auto">
+          <h1 className='text-center text-4xl font-bold text-blue-600 mt-8'>{t("whoami.title")}</h1>
           <div className="flex items-center justify-between">
             <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
               {t("whoami.para1")}
@@ -90,16 +90,16 @@ function App() {
           </div>
         </div>
         <div className='py-4 border-b border-gray-300' id="experience" />
-        <div className="text-center my-8 max-w-3xl mx-auto">
-          <h1 className='text-4xl font-bold text-blue-600 mt-16'>{t("experience.title")}</h1>
+        <div className="my-8 max-w-3xl mx-auto">
+          <h1 className='text-center text-4xl font-bold text-blue-600 mt-16'>{t("experience.title")}</h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
             {t("experience.subtitle")}
           </p>
           <Skills />
         </div>
         <div className='py-4 border-b border-gray-300' id="projects" />
-        <div className="text-center my-8 max-w-3xl mx-auto">
-          <h1 className='text-4xl font-bold text-blue-600 mt-16'>{t("projects.title")}</h1>
+        <div className="my-8 max-w-3xl mx-auto">
+          <h1 className='text-center text-4xl font-bold text-blue-600 mt-16'>{t("projects.title")}</h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
             {t("projects.subtitle")}
           </p>
