@@ -1,18 +1,9 @@
 import { useState } from "react";
 import { FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
 import Button from "./button";
-import { useTranslation } from "react-i18next";
 
-function Navbar() {
+function Navbar({ toggleLanguage, currentLang, t }) {
   const [isOpen, setIsOpen] = useState(false);
-  const { t, i18n } = useTranslation();
-  const [language, setLanguage] = useState("EN");
-  const currentLang = i18n.language === "nl" ? "NL" : "EN";
-
-  const toggleLanguage = () => {
-    const newLang = i18n.language === "en" ? "nl" : "en";
-    i18n.changeLanguage(newLang);
-  };
 
   return (
     <nav className="flex items-center justify-between py-4 border-b border-gray-300 relative">
@@ -44,7 +35,7 @@ function Navbar() {
           onClick={toggleLanguage}
           className="px-3 py-1 rounded-lg text-sm bg-gray-700 text-white hover:bg-blue-600 transition"
         >
-          {currentLang}
+          {currentLang.toUpperCase()}
         </button>
       </div>
 
@@ -88,7 +79,7 @@ function Navbar() {
               }}
               className="px-3 rounded-lg text-sm bg-gray-700 text-white hover:bg-blue-600 transition"
             >
-              {currentLang}
+              {currentLang.toUpperCase()}
             </button>
           </div>
         </div>
