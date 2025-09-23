@@ -94,10 +94,6 @@ function App() {
           <h1 className='text-4xl font-bold text-blue-600 mt-16'>{t("experience.title")}</h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
             {t("experience.subtitle")}
-            {/* Frontend: HTML • CSS • JavaScript • React • Tailwind CSS<br/>
-            Backend: Java • Spring Boot • Node.js • Express.js<br/>
-            Database: MySQL • PostgreSQL • MongoDB<br/>
-            Other: Git • Docker • AWS<br/> */}
           </p>
           <Skills />
         </div>
