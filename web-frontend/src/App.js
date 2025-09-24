@@ -58,9 +58,9 @@ function App() {
           <div className="md:w-1/2 flex justify-center md:justify-center">
             <div className="relative">
               <img
-                src="blob-profile-v3.png"
+                src="table_shot_profile.png"
                 alt="Profile"
-                className="w-auto h-48 sm:w-auto sm:h-64 md:w-full md:h-[32rem]"
+                className="w-auto h-48 sm:w-auto sm:h-64 md:w-full md:h-[42rem]"
               />
             </div>
           </div>
