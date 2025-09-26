@@ -4,6 +4,7 @@ import Footer from './components/footer';
 import Skills from './components/skills';
 import Navbar from './components/navbar';
 import Project from './components/project';
+import { motion } from "motion/react"
 import { User, Puzzle, GraduationCap, ChevronDown } from "lucide-react";
 import { useTranslation } from 'react-i18next';
 
@@ -42,25 +43,25 @@ function App() {
         />
         <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-4 min-h-0 md:min-h-[88vh]">
           <div className="md:w-1/2 w-full text-left pt-8 sm:pt-12 md:pt-0">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-700 mb-2">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-blue-700 mb-4">
               {t("front.greeting")}
-            </h2>
-            <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-700 mb-12 md:mb-20">
+            </h1>
+            <p className="text-lg sm:text-xl md:text-3xl text-gray-600 mb-12 md:mb-20 leading-relaxed">
               {t("front.subtitle")}
-            </h2>
+            </p>
             <button
-              className="hidden md:inline-block bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition"
+              className="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-blue-600 transition"
               onClick={handleScrollToAbout}
             >
-              {t("front.about")} <ChevronDown className="inline-block" size={30} />
+              {t("front.about")} <ChevronDown className="animate-bounce-slow" size={28} />
             </button>
           </div>
           <div className="md:w-1/2 flex justify-center md:justify-center">
             <div className="relative">
               <img
-                src="frontpage-profile.png"
+                src="frontpage-profile-light.png"
                 alt="Profile"
-                className="w-auto h-48 sm:w-auto sm:h-64 md:w-full md:h-[42rem]"
+                className="w-full max-w-md md:max-h-[42rem] object-contain"
               />
             </div>
           </div>
