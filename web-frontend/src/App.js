@@ -43,9 +43,14 @@ function App() {
         />
         <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-4 min-h-0 md:min-h-[88vh]">
           <div className="md:w-1/2 w-full text-left pt-8 sm:pt-12 md:pt-0">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-blue-700 mb-4">
+            <motion.h1
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }} 
+              transition={{ duration: 0.7 }}
+              className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-blue-700 mb-4"
+            >
               {t("front.greeting")}
-            </h1>
+            </motion.h1>
             <p className="text-lg sm:text-xl md:text-3xl text-gray-600 mb-12 md:mb-20 leading-relaxed">
               {t("front.subtitle")}
             </p>

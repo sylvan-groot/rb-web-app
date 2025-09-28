@@ -71,7 +71,7 @@ function Skills() {
       </div>
       {skills.map((skill, index) => (
         <div key={index} className="mb-5">
-          <span className="font-bold mb-1 block">{skill.name}</span>
+          <span className="font-bold mb-1 block text-center">{skill.name}</span>
           <div className="bg-gray-300 rounded-lg h-5 sm:h-5 md:h-6 overflow-hidden relative">
             <div
               className="bar-fill"
