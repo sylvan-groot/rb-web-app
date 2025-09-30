@@ -22,7 +22,6 @@ function Footer() {
           <a href="#about" className="hover:text-blue-600">{t("nav.about")}</a>
           <a href="#projects" className="hover:text-blue-600">{t("nav.projects")}</a>
           <a href="#experience" className="hover:text-blue-600">{t("nav.experience")}</a>
-          <a href="mailto:Sylvan.Groot@outlook.com" className="hover:text-blue-600">{t("nav.contact")}</a>
           <a
             href="https://github.com/sylvan-groot"
             target="_blank"

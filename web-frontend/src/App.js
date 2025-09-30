@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Footer from './components/footer';
 import Skills from './components/skills';
 import Navbar from './components/navbar';
+import FloatingNav from './components/floatingNav';
 import Project from './components/project';
 import { motion } from "motion/react"
 import { User, Puzzle, GraduationCap, ChevronDown } from "lucide-react";
@@ -41,6 +42,7 @@ function App() {
           currentLang={language}
           t={t}
         />
+        <FloatingNav t={t} />
         <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-4 min-h-0 md:min-h-[88vh]">
           <div className="md:w-1/2 w-full text-left pt-8 sm:pt-12 md:pt-0">
             <motion.h1

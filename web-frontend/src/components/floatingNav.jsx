@@ -1,0 +1,102 @@
+import { useState, useEffect } from "react";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
+import Button from "./button";
+
+function FloatingNav({ t }) {
+    const [showHamburger, setShowHamburger] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 100) {
+                setShowHamburger(true);
+            } else {
+                setShowHamburger(false);
+                setMenuOpen(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    return (
+        <>
+            <AnimatePresence>
+                {showHamburger && (
+                    <motion.button
+                        key="hamburger"
+                        initial={{ x: 100 }}
+                        animate={{ x: 0 }}
+                        exit={{ x: 200 }}
+                        transition={{ type: "spring", stiffness: 300, damping: 25 }}
+                        onClick={() => setMenuOpen(!menuOpen)}
+                        className="fixed top-6 right-6 z-50 p-3 
+                                text-black rounded-full shadow-none
+                                sm:bg-gradient-to-r sm:from-blue-600 sm:to-blue-500 
+                                sm:bg-transparent sm:text-white sm:shadow-lg"
+                    >
+                        <AnimatePresence mode="wait">
+                            <motion.div
+                                key={menuOpen ? "close" : "open"}
+                                initial={{ rotate: 0, opacity: 0 }}
+                                animate={{ rotate: 180, opacity: 1 }}
+                                exit={{ rotate: -180, opacity: 0 }}
+                                transition={{ duration: 0.1, ease: "easeInOut" }}
+                            >
+                                {menuOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
+                            </motion.div>
+                        </AnimatePresence>
+                    </motion.button>
+                )}
+            </AnimatePresence>
+
+            {/* Slide-out menu */}
+            <AnimatePresence>
+                {menuOpen && (
+                    <motion.div
+                        initial={{ x: "100%" }}
+                        animate={{ x: 0 }}
+                        exit={{ x: "100%" }}
+                        transition={{ type: "tween", duration: 0.3 }}
+                        className="fixed top-0 right-0 h-full w-52 bg-white shadow-2xl z-40 flex flex-col justify-between p-6"
+                    >
+                        <div className="flex flex-col gap-4 mt-8">
+                            <Button href="#about" noUnderline onClick={() => setMenuOpen(false)}>About</Button>
+                            <Button href="#experience" noUnderline onClick={() => setMenuOpen(false)}>Experience</Button>
+                            <Button href="#projects" noUnderline onClick={() => setMenuOpen(false)}>Projects</Button>
+                            <Button href="mailto:Sylvan.Groot@outlook.com" noUnderline onClick={() => setMenuOpen(false)}>Contact</Button>
+                        </div>
+
+                        <div className="flex flex-col items-start gap-2 mt-8 border-t pt-4">
+                            <p className="text-sm text-gray-600">&copy; {new Date().getFullYear()} Sylvan Groot</p>
+                            <div className="flex gap-4">
+                                <a
+                                    href="https://github.com/sylvan-groot"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-gray-700 hover:text-blue-600"
+                                    aria-label="GitHub"
+                                >
+                                    <FaGithub size={20} />
+                                </a>
+                                <a
+                                    href="https://linkedin.com/in/sylvan-groot-a49412176"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-gray-700 hover:text-blue-600"
+                                    aria-label="LinkedIn"
+                                >
+                                    <FaLinkedin size={20} />
+                                </a>
+                            </div>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </>
+    );
+}
+
+export default FloatingNav;
