@@ -42,7 +42,7 @@ function App() {
           currentLang={language}
           t={t}
         />
-        <FloatingNav t={t}
+        <FloatingNav
           toggleLanguage={toggleLanguage}
           currentLang={language}
           t={t}

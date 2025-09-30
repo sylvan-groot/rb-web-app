@@ -8,7 +8,7 @@
     { "name": "Bootstrap", "exp": 50, "info": "The bootstrap framework is something I've mostly used in projects before I studied in the HvA. I am familiar with the framework but have not used it in a long time." }
   ],
   "Backend": [
-    { "name": "Python", "exp": 80, "info": "" },
+    { "name": "Python", "exp": 80, "info": "Python is my most recently used programming language" },
     { "name": "Java", "exp": 70 },
     { "name": "Node.js", "exp": 75 },
     { "name": "PHP", "exp": 50 }
