@@ -3,7 +3,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "./button";
 
-function FloatingNav({ t }) {
+function FloatingNav({ toggleLanguage, currentLang, t }) {
     const [showHamburger, setShowHamburger] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -90,6 +90,19 @@ function FloatingNav({ t }) {
                                 >
                                     <FaLinkedin size={20} />
                                 </a>
+                                <button
+                                    onClick={() => {
+                                        toggleLanguage();
+                                        setMenuOpen(false);
+                                    }}
+                                    className="w-8 h-5 rounded-lg overflow-hidden text-white bg-gray-700 hover:border-blue-600 hover:bg-blue-600 transition"
+                                >
+                                    <img
+                                        src={`/flag/${currentLang}.png`}
+                                        alt={currentLang === 'en' ? 'EN' : 'NL'}
+                                        className="w-full h-full object-cover"
+                                    />
+                                </button>
                             </div>
                         </div>
                     </motion.div>

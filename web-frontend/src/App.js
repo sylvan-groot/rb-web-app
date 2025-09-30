@@ -42,7 +42,11 @@ function App() {
           currentLang={language}
           t={t}
         />
-        <FloatingNav t={t} />
+        <FloatingNav t={t}
+          toggleLanguage={toggleLanguage}
+          currentLang={language}
+          t={t}
+        />
         <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-4 min-h-0 md:min-h-[88vh]">
           <div className="md:w-1/2 w-full text-left pt-8 sm:pt-12 md:pt-0">
             <motion.h1

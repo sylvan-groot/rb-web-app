@@ -33,9 +33,13 @@ function Navbar({ toggleLanguage, currentLang, t }) {
         </a>
         <button
           onClick={toggleLanguage}
-          className="px-3 py-1 rounded-lg text-sm bg-gray-700 text-white hover:bg-blue-600 transition"
+          className="w-9 h-6 rounded-lg overflow-hidden text-white bg-gray-700 hover:border-blue-600 hover:bg-blue-600 transition"
         >
-          {currentLang.toUpperCase()}
+          <img
+            src={`/flag/${currentLang}.png`}
+            alt={currentLang === 'en' ? 'EN' : 'NL'}
+            className="w-full h-full object-cover"
+          />
         </button>
       </div>
 
