@@ -63,10 +63,10 @@ function FloatingNav({ t }) {
                         className="fixed top-0 right-0 h-full w-52 bg-white shadow-2xl z-40 flex flex-col justify-between p-6"
                     >
                         <div className="flex flex-col gap-4 mt-8">
-                            <Button href="#about" noUnderline onClick={() => setMenuOpen(false)}>About</Button>
-                            <Button href="#experience" noUnderline onClick={() => setMenuOpen(false)}>Experience</Button>
-                            <Button href="#projects" noUnderline onClick={() => setMenuOpen(false)}>Projects</Button>
-                            <Button href="mailto:Sylvan.Groot@outlook.com" noUnderline onClick={() => setMenuOpen(false)}>Contact</Button>
+                            <Button href="#about" noUnderline onClick={() => setMenuOpen(false)}>{t("nav.about")}</Button>
+                            <Button href="#experience" noUnderline onClick={() => setMenuOpen(false)}>{t("nav.experience")}</Button>
+                            <Button href="#projects" noUnderline onClick={() => setMenuOpen(false)}>{t("nav.projects")}</Button>
+                            <Button href="mailto:Sylvan.Groot@outlook.com" noUnderline onClick={() => setMenuOpen(false)}>{t("nav.contact")}</Button>
                         </div>
 
                         <div className="flex flex-col items-start gap-2 mt-8 border-t pt-4">

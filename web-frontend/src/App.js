@@ -47,7 +47,7 @@ function App() {
           <div className="md:w-1/2 w-full text-left pt-8 sm:pt-12 md:pt-0">
             <motion.h1
               initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }} 
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
               className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-blue-700 mb-4"
             >
@@ -68,33 +68,33 @@ function App() {
               <img
                 src="frontpage-profile-light.png"
                 alt="Profile"
-                className="w-full max-w-md md:max-h-[42rem] object-contain"
+                className="w-full md:max-h-[40rem] object-contain"
               />
             </div>
           </div>
         </div>
         <div className='py-4 border-b border-gray-300' id="about" />
-        <div className="my-8 max-w-3xl mx-auto">
+        <div className="my-8 max-w-3xl mx-auto space-y-6">
           <h1 className='text-center text-4xl font-bold text-blue-600 mt-8'>{t("whoami.title")}</h1>
-          <div className="flex items-center justify-between">
-            <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
+          <div className="flex items-center gap-4 bg-white rounded-2xl shadow-md p-6">
+            <p className="text-gray-700 text-base sm:text-lg md:text-xl">
               {t("whoami.para1")}
             </p>
-            <User className="w-16 h-16 text-gray-500 opacity-70 flex-shrink-0 ml-2" />
+            <User className="w-12 h-12 text-blue-600 flex-shrink-0 hidden sm:block" />
           </div>
 
-          <div className="flex items-center justify-between">
-            <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
+          <div className="flex items-center gap-4 bg-white rounded-2xl shadow-md p-6">
+            <p className="text-gray-700 text-base sm:text-lg md:text-xl">
               {t("whoami.para2")}
             </p>
-            <Puzzle className="w-14 h-14 text-gray-500 opacity-70 flex-shrink-0 ml-2" />
+            <Puzzle className="w-12 h-12 text-blue-600 flex-shrink-0 hidden sm:block" />
           </div>
 
-          <div className="flex items-center justify-between">
-            <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
+          <div className="flex items-center gap-4 bg-white rounded-2xl shadow-md p-6">
+            <p className="text-gray-700 text-base sm:text-lg md:text-xl">
               {t("whoami.para3")}
             </p>
-            <GraduationCap className="w-14 h-14 text-gray-500 opacity-70 flex-shrink-0 ml-2" />
+            <GraduationCap className="w-12 h-12 text-blue-600 flex-shrink-0 hidden sm:block" />
           </div>
         </div>
         <div className='py-4 border-b border-gray-300' id="experience" />
