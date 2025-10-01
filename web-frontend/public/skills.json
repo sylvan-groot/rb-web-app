@@ -1,37 +1,132 @@
 {
   "Frontend": [
-    { "name": "JavaScript", "exp": 70, "info": "Javascript is a programming language I have used in every web application project and can confidently say I'm well experienced using it. The reason for this rating is because Javascript is so vast and there is a lot more to learn" },
-    { "name": "React", "exp": 80, "info": "I have used React for several projects and have almost no problems when using the language." },
-    { "name": "React Native", "exp": 40, "info": "I am familiar using React Native for creating mobile. Next to this React Native and React also share similarities of which im confident I will pick up on." },
-    { "name": "Vue.js", "exp": 70, "info": "I have used Vue.js to create many different school projects. I've also learned to write front-end testcases using Vue jest and use frameworks such as Vuetify to create a better UX." },
-    { "name": "Tailwind CSS", "exp": 60, "info": "Using Tailwind CSS I was able to make this portfolio website more reactive and polished. Next to this I've used Tailwind a couple of times and during other projects and understand the basics" },
-    { "name": "Bootstrap", "exp": 50, "info": "The bootstrap framework is something I've mostly used in projects before I studied in the HvA. I am familiar with the framework but have not used it in a long time." }
+    {
+      "name": "JavaScript",
+      "exp": 70,
+      "info": "Javascript is a programming language I have used in every web application project and can confidently say I'm well experienced using it. The reason for this rating is because Javascript is so vast and there is a lot more to learn"
+    },
+    {
+      "name": "React",
+      "exp": 80,
+      "info": "I have used React in several projects and can work with it comfortably. I am confident building components and managing state effectively."
+    },
+    {
+      "name": "React Native",
+      "exp": 40,
+      "info": "I am familiar with React Native for mobile development. Since it shares many concepts with React, I am confident I can pick it up quickly for new projects."
+    },
+    {
+      "name": "Vue.js",
+      "exp": 70,
+      "info": "I have used Vue.js in various projects and have written front-end test cases using Vue Jest. I have also worked with frameworks like Vuetify to improve user experience."
+    },
+    {
+      "name": "Tailwind CSS",
+      "exp": 60,
+      "info": "Using Tailwind CSS I was able to make this portfolio website more responsive and polished. Next to this I have applied Tailwind in several projects and understand its core concepts."
+    },
+    {
+      "name": "Bootstrap",
+      "exp": 50,
+      "info": "I have used Bootstrap in projects before attending HvA. I am familiar with it, but I haven’t applied it extensively in recent work."
+    }
   ],
   "Backend": [
-    { "name": "Python", "exp": 80, "info": "Python is my most recently used programming language" },
-    { "name": "Java", "exp": 70 },
-    { "name": "Node.js", "exp": 75 },
-    { "name": "PHP", "exp": 50 }
+    {
+      "name": "Python",
+      "exp": 90,
+      "info": "Python is the language I have used most recently for building applications, backends, and exploring artificial intelligence. I am comfortable using Python for a variety of tasks."
+    },
+    {
+      "name": "Java",
+      "exp": 70,
+      "info": "I have used Java to build backends with Spring Boot, as well as object-oriented applications for school assignments. This allowed me to learn the basics of encapsulation, inheritance, polymorphism and abstraction."
+    },
+    {
+      "name": "Node.js",
+      "exp": 75,
+      "info": "With Node.js I have built server-side applications and APIs, focusing on asynchronous programming and efficient request handling."
+    },
+    {
+      "name": "PHP",
+      "exp": 40,
+      "info": "I have experience with PHP in legacy projects and simple web applications. I am familiar with the language, though I haven’t used it in recent projects."
+    }
   ],
   "Frameworks": [
-    { "name": "Spring Boot", "exp": 60 },
-    { "name": "Express.js", "exp": 40 },
-    { "name": "Django", "exp": 80 },
-    { "name": "Flask", "exp": 80 },
-    { "name": "FastAPI", "exp": 70 }
+    {
+      "name": "Spring Boot",
+      "exp": 70,
+      "info": "I have used Spring Boot in Java projects to build RESTful APIs and backend services. This application also uses Spring Boot Java to connect to the database and create API endpoints."
+    },
+    {
+      "name": "Express.js",
+      "exp": 40,
+      "info": "I have used Express.js during group projects where I had to make use of Express.js in order to use the backend but was not responsible for setting up the service."
+    },
+    {
+      "name": "Django",
+      "exp": 80,
+      "info": "Django is a very beginner friendly framework and was very easy to get into. This combined with python being the backbone leaned me to use it for multiple full-stack projects and allowing me to learn how to use the framework with relative ease."
+    },
+    {
+      "name": "FastAPI",
+      "exp": 70,
+      "info": "FastAPI is a modern Python framework for building APIs. I have used it for individual assignments to quickly create full-stack applications and experiment with API development."
+    }
   ],
   "Databases": [
-    { "name": "MySQL / MariaDB - SQL", "exp": 80 },
-    { "name": "PostgreSQL - SQL", "exp": 70 },
-    { "name": "MongoDB - NoSQL", "exp": 60 },
-    { "name": "Data modeling & ER diagrams", "exp": 70 }
+    {
+      "name": "MySQL / MariaDB - SQL",
+      "exp": 80,
+      "info": "I have used primarily MySQL and MariaDB for storing data, relational database design, writing queries, and managing schemas. I am comfortable creating tables, defining relationships, and performing CRUD operations."
+    },
+    {
+      "name": "PostgreSQL - SQL",
+      "exp": 70,
+      "info": "PostgreSQL shares many similarities to MySQL and MariaDB. I have applied PostgreSQL to fewer project but am confident managing databases with it. This project also makes use of PostgreSQL for CRUD operations."
+    },
+    {
+      "name": "MongoDB - NoSQL",
+      "exp": 50,
+      "info": "While having not directly applied MongoDB to any large scale projects. I am familiar using NoSQL and MongoDB from assignments where the goal was to store/retrieve unstructured data and use aggregation and collections."
+    },
+    {
+      "name": "Data modeling & ER diagrams",
+      "exp": 70,
+      "info": "Using tools such as MySQLWorkbench in many of my project to create data models and ER diagrams for planning database structures. This helps in understanding relationships and optimizing database design before implementation, as well as reverse engineering diagrams into database tables."
+    }
   ],
   "Other": [
-    { "name": "Git", "exp": 80 },
-    { "name": "Docker", "exp": 70 },
-    { "name": "AWS", "exp": 50 },
-    { "name": "Linux", "exp": 50 },
-    { "name": "Agile work methods", "exp": 70 },
-    { "name": "AI technology", "exp": 80 }
+    {
+      "name": "Git",
+      "exp": 80,
+      "info": "Using Git for version control, branching, merging and code reviews making it a staple in my development workflow. Also by making use of webhooks I can automate the deployment in projects such as this Raspberry Pi website."
+    },
+    {
+      "name": "Docker",
+      "exp": 70,
+      "info": "I have experience using Docker to containerize applications for consistent development. I have applied it in multiple projects and internships. I can write Dockerfiles and use Docker Compose for multi-container projects."
+    },
+    {
+      "name": "AWS",
+      "exp": 50,
+      "info": "My experience with AWS is limited to a single project during a minor in Cloud Solutions which took half a year. I am familiar with AWS services such as S3, EC2, Lambdas, RDS and understand the fundamentals of cloud computing."
+    },
+    {
+      "name": "Linux",
+      "exp": 60,
+      "info": "I have used linux very little during my education. Most of my experience comes from tinkering with my raspberry which has a Linux Debian OS installed. I would not say that im very experienced but I am familiar with navigating Linux terminals, using commands for file management and basic shell scripting for automation tasks."
+    },
+    {
+      "name": "Agile work methods",
+      "exp": 70,
+      "info": "In my team projects, I have applied both Waterfall and Scrum methodologies. This allowed me to learn which steps to take in order the plan and finish a project successfully."
+    },
+    {
+      "name": "AI technology",
+      "exp": 80,
+      "info": "In recent years I have been studying and experimenting AI technologies due to their rapid developement and capabilties. I have created and trained small machine-learning and deep-learning algorithms as well as apply them during internships. This allowed me to learn how the process of an AI models works and what uses they could have."
+    }
   ]
 }
