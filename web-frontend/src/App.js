@@ -70,7 +70,7 @@ function App() {
           <div className="md:w-1/2 flex justify-center md:justify-center">
             <div className="relative">
               <img
-                src="frontpage-profile-light.png"
+                src="frontpage/frontpage-profile-light.png"
                 alt="Profile"
                 className="w-full md:max-h-[40rem] object-contain"
               />
@@ -107,7 +107,7 @@ function App() {
           <p className="text-base sm:text-lg md:text-xl text-gray-700 mt-4">
             {t("experience.subtitle")}
           </p>
-          <Skills />
+          <Skills apiEndpoint={"/api/skills"} />
         </div>
         <div className='py-4 border-b border-gray-300' id="projects" />
         <div className="my-8 max-w-3xl mx-auto">

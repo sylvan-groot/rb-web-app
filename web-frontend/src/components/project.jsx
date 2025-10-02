@@ -5,7 +5,7 @@ function Project({ name, desc, languages, imgUrl, gitRepoLink }) {
 
       {imgUrl && (
         <img
-          src={`/${imgUrl}`}
+          src={`/projects/${imgUrl}`}
           alt={name}
           className="mx-auto mb-2"
         />

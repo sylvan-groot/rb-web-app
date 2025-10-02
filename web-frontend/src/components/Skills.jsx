@@ -4,7 +4,7 @@ import { FaQuestion } from 'react-icons/fa';
 import Button from './button';
 import '../App.css';
 
-function Skills() {
+function Skills({ apiEndpoint }) {
   const [skillsData, setSkillsData] = useState({});
   const [visible, setVisible] = useState(false);
   const [selected, setSelected] = useState("Frontend");
@@ -12,11 +12,24 @@ function Skills() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    fetch("/skills.json")
+    fetch(apiEndpoint)
       .then(res => res.json())
-      .then(data => setSkillsData(data))
+      .then((data) => {
+        // Remove duplicate categories
+        const grouped = data.reduce((acc, skill) => {
+          if (!acc[skill.category]) acc[skill.category] = [];
+          acc[skill.category].push(skill);
+          return acc;
+        }, {});
+        // Sort by exp number
+        Object.keys(grouped).forEach(category => {
+          grouped[category].sort((a, b) => b.exp - a.exp);
+        });
+        setSkillsData(grouped);
+        setVisible(true);
+      })
       .catch(err => console.error(err));
-  }, []);
+  }, [apiEndpoint]);
 
   useEffect(() => {
     setVisible(true);
