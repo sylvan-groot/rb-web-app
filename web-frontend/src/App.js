@@ -14,7 +14,7 @@ function App() {
   const [data, setData] = useState([]);
   const [workExp, setWorkExp] = useState([]);
   const { t, i18n } = useTranslation();
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('nl');
 
   useEffect(() => {
     fetch("/api/projects")

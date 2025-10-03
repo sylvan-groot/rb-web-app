@@ -21,6 +21,7 @@ function Footer() {
         <div className="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 mt-4 md:mt-0">
           <a href="#about" className="hover:text-blue-600">{t("nav.about")}</a>
           <a href="#projects" className="hover:text-blue-600">{t("nav.projects")}</a>
+          <a href="#work" className="hover:text-blue-600">{t("nav.work")}</a>
           <a href="#experience" className="hover:text-blue-600">{t("nav.experience")}</a>
           <a
             href="https://github.com/sylvan-groot"

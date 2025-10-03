@@ -9,16 +9,26 @@ function FloatingNav({ toggleLanguage, currentLang, t }) {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 100) {
+            if (window.innerWidth <= 768) {
                 setShowHamburger(true);
             } else {
-                setShowHamburger(false);
-                setMenuOpen(false);
+                if (window.scrollY > 100) {
+                    setShowHamburger(true);
+                } else {
+                    setShowHamburger(false);
+                    setMenuOpen(false);
+                }
             }
         };
 
         window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
+        window.addEventListener('resize', handleScroll);
+        handleScroll();
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener('resize', handleScroll);
+        };
     }, []);
 
     return (
@@ -66,6 +76,7 @@ function FloatingNav({ toggleLanguage, currentLang, t }) {
                             <Button href="#about" noUnderline onClick={() => setMenuOpen(false)}>{t("nav.about")}</Button>
                             <Button href="#experience" noUnderline onClick={() => setMenuOpen(false)}>{t("nav.experience")}</Button>
                             <Button href="#projects" noUnderline onClick={() => setMenuOpen(false)}>{t("nav.projects")}</Button>
+                            <Button href="#work" noUnderline onClick={() => setMenuOpen(false)}>{t("nav.work")}</Button>
                             <Button href="mailto:Sylvan.Groot@outlook.com" noUnderline onClick={() => setMenuOpen(false)}>{t("nav.contact")}</Button>
                         </div>
 

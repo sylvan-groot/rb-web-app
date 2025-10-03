@@ -28,8 +28,9 @@
     },
     "nav": {
         "about": "About",
-        "experience": "Experience",
+        "experience": "Skills",
         "projects": "Projects",
+        "work": "Experience",
         "contact": "Contact"
     },
     "work": {

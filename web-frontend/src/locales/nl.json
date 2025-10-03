@@ -28,8 +28,9 @@
     },
     "nav": {
         "about": "Over mij",
-        "experience": "Ervaring",
+        "experience": "Vaardigheden",
         "projects": "Projecten",
+        "work": "Ervaring",
         "contact": "Contact"
     },
     "work": {
