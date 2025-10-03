@@ -5,12 +5,14 @@ import Skills from './components/skills';
 import Navbar from './components/navbar';
 import FloatingNav from './components/floatingNav';
 import Project from './components/project';
+import WorkExperience from './components/workExp';
 import { motion } from "motion/react"
 import { User, Puzzle, GraduationCap, ChevronDown } from "lucide-react";
 import { useTranslation } from 'react-i18next';
 
 function App() {
   const [data, setData] = useState([]);
+  const [workExp, setWorkExp] = useState([]);
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState('en');
 
@@ -18,6 +20,13 @@ function App() {
     fetch("/api/projects")
       .then((res) => res.json())
       .then((projects) => setData(projects))
+      .catch((err) => console.error(err));
+  }, []);
+
+  useEffect(() => {
+    fetch("/data/work.json")
+      .then((res) => res.json())
+      .then((work) => setWorkExp(work))
       .catch((err) => console.error(err));
   }, []);
 
@@ -126,6 +135,24 @@ function App() {
               gitRepoLink={p.hasGitRepo ? p.gitRepoLink : null}
             />
           ))}
+        </div>
+        <div className='py-4 border-b border-gray-300' id="work" />
+        <div className="my-8 max-w-3xl mx-auto">
+          <h1 className="text-center text-4xl font-bold text-blue-600 mt-16">
+            Work experience
+          </h1>
+          <div className="mt-10 mb-10 space-y-8 md:border-l-2 md:border-gray-300 md:pl-6">
+            {workExp.Work?.map((exp, index) => (
+              <WorkExperience
+                key={index}
+                title={exp.title}
+                company={exp.company}
+                duration={exp.duration}
+                info={t(exp.info)}
+                last={index === workExp.Work.length - 1}
+              />
+            ))}
+          </div>
         </div>
       </div>
       <Footer />

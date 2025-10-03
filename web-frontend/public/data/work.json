@@ -1,0 +1,28 @@
+{
+  "Work": [
+    {
+      "title": "Software Developer Intern",
+      "company": "Holding the Drones",
+      "duration": "Aug 2023 – Feb 2024",
+      "info": "work.workDesc1"
+    },
+    {
+      "title": "Software Developer Intern",
+      "company": "SRC",
+      "duration": "Aug 2023 – Feb 2024",
+      "info": "work.workDesc2"
+    },
+    {
+      "title": "Software Developer Intern",
+      "company": "Power Internet",
+      "duration": "Aug 2020 – Jun 2021",
+      "info": "work.workDesc3"
+    },
+    {
+      "title": "Software Developer Intern",
+      "company": "Web-Equity",
+      "duration": "Feb 2020 – Jun 2020",
+      "info": "work.workDesc4"
+    }
+  ]
+}

@@ -31,5 +31,11 @@
         "experience": "Experience",
         "projects": "Projects",
         "contact": "Contact"
+    },
+    "work": {
+        "workDesc1": "Researched AI applications for product information systems, wrote Python demo apps,and contributed to Agile Scrum processes (stand-ups, sprint reviews, planning).",
+        "workDesc2": "Researched AI applications for product information systems, wrote Python demo apps,and contributed to Agile Scrum processes (stand-ups, sprint reviews, planning).",
+        "workDesc3": "Built a custom PHP/jQuery application for infrastructure use, optimized front-end performance, and participated in team meetings to guide development.",
+        "workDesc4": "Contributed to a mobile info-hub app project, implemented UI components in ReactJS, and participated in code reviews to ensure maintainable and scalable design."
     }
 }
