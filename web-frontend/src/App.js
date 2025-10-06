@@ -139,16 +139,18 @@ function App() {
         <div className='py-4 border-b border-gray-300' id="work" />
         <div className="my-8 max-w-3xl mx-auto">
           <h1 className="text-center text-4xl font-bold text-blue-600 mt-16">
-            Work experience
+            {t("work.title")}
           </h1>
           <div className="mt-10 mb-10 space-y-8 md:border-l-2 md:border-gray-300 md:pl-6">
             {workExp.Work?.map((exp, index) => (
               <WorkExperience
                 key={index}
                 title={exp.title}
+                role={t(exp.role)}
                 company={exp.company}
                 duration={exp.duration}
                 info={t(exp.info)}
+                focus={exp.focus}
                 last={index === workExp.Work.length - 1}
               />
             ))}

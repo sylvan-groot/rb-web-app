@@ -34,9 +34,18 @@
         "contact": "Contact"
     },
     "work": {
-        "workDesc1": "Researched AIAAAA applications for product information systems, wrote Python demo apps,and contributed to Agile Scrum processes (stand-ups, sprint reviews, planning).",
-        "workDesc2": "Researched AI applications for product information systems, wrote Python demo apps,and contributed to Agile Scrum processes (stand-ups, sprint reviews, planning).",
-        "workDesc3": "Built a custom PHP/jQuery application for infrastructure use, optimized front-end performance, and participated in team meetings to guide development.",
-        "workDesc4": "Contributed to a mobile info-hub app project, implemented UI components in ReactJS, and participated in code reviews to ensure maintainable and scalable design."
+        "title": "Werkervaring",
+        "role": "Stagiair",
+        "workDesc1": "Ontwikkelde een applicatie die gebruikmaakt van AI en drones om onkruid te lokaliseren met geografische data en deze op te slaan in de database. Dit vereiste uitgebreide training van meerdere AI-modellen om een hoge nauwkeurigheid te verkrijgen.",
+        "workDesc2": "Onderzocht en besprak de implementatie van AI-functionaliteiten binnen de bestaande infrastructuur van het bedrijf, hierbij werden Python notebook demo’s gepresenteerd tijdens Agile Scrum review sessies.",
+        "workDesc3": "Ontwikkelde een PHP/jQuery applicatie om te integreren in de hoofd­infrastructuur, optimaliseerde de front-end en nam actief deel aan teamvergaderingen.",
+        "workDesc4": "Droeg bij aan een mobiel infohub project door UI componenten te implementeren en te werken aan de backend in ReactJS. Dit werd uitgevoerd via pair programming om efficiënter te werken en meer te leren over React Native.",
+        "focus": {
+            "ai": "AI implementatie",
+            "appdev": "Applicatie ontwikkeling",
+            "research": "Onderzoek gefocust",
+            "solo": "Zelfstandig werken",
+            "platform": "Mobiele app"
+        }
     }
 }

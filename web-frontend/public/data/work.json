@@ -1,28 +1,54 @@
 {
   "Work": [
     {
-      "title": "Software Developer Intern",
+      "title": "Software Developer",
+      "role": "work.role",
       "company": "Holding the Drones",
-      "duration": "Aug 2023 – Feb 2024",
-      "info": "work.workDesc1"
+      "duration": "February 2025 –  July 2025",
+      "info": "work.workDesc1",
+      "focus": [
+        "work.focus.appdev",
+        "work.focus.solo",
+        "work.focus.ai",
+        "Python - Docker"
+      ]
     },
     {
-      "title": "Software Developer Intern",
+      "title": "Software Developer",
+      "role": "work.role",
       "company": "SRC",
       "duration": "Aug 2023 – Feb 2024",
-      "info": "work.workDesc2"
+      "info": "work.workDesc2",
+      "focus": [
+        "work.focus.research",
+        "Agile Scrum",
+        "work.focus.ai",
+        "Python"
+      ]
     },
     {
-      "title": "Software Developer Intern",
+      "title": "Software Developer",
+      "role": "work.role",
       "company": "Power Internet",
       "duration": "Aug 2020 – Jun 2021",
-      "info": "work.workDesc3"
+      "info": "work.workDesc3",
+      "focus": [
+        "work.focus.appdev",
+        "work.focus.solo",
+        "PHP - Javascript"
+      ]
     },
     {
-      "title": "Software Developer Intern",
+      "title": "Software Developer",
+      "role": "work.role",
       "company": "Web-Equity",
       "duration": "Feb 2020 – Jun 2020",
-      "info": "work.workDesc4"
+      "info": "work.workDesc4",
+      "focus": [
+        "work.focus.appdev",
+        "Agile Scrum",
+        "React Native"
+      ]
     }
   ]
 }

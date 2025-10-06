@@ -34,9 +34,18 @@
         "contact": "Contact"
     },
     "work": {
-        "workDesc1": "Researched AI applications for product information systems, wrote Python demo apps,and contributed to Agile Scrum processes (stand-ups, sprint reviews, planning).",
-        "workDesc2": "Researched AI applications for product information systems, wrote Python demo apps,and contributed to Agile Scrum processes (stand-ups, sprint reviews, planning).",
-        "workDesc3": "Built a custom PHP/jQuery application for infrastructure use, optimized front-end performance, and participated in team meetings to guide development.",
-        "workDesc4": "Contributed to a mobile info-hub app project, implemented UI components in ReactJS, and participated in code reviews to ensure maintainable and scalable design."
+        "title": "Work Experience",
+        "role": "Intern",
+        "workDesc1": "Developed an app that makes use of AI and drones to pinpoint weeds with geographical data and save them to the database. This required extensive training of multiple AI models to assure good accuracy.",
+        "workDesc2": "Researched and discussed the implementation of AI functionalities inside the current company infrastructure, presenting Python-based notebook demos during Agile Scrum review sessions.",
+        "workDesc3": "Built a PHP/jQuery application section to implement in the main infrastructure, optimized front-end performance and participated in team meetings.",
+        "workDesc4": "Contributed to a mobile info-hub app project by implemented UI components and working on the backend in ReactJS. This was done using pair programming to work more effeciently and learn about React Native.",
+        "focus": {
+            "ai": "AI implementation",
+            "appdev": "Application development",
+            "research": "Research focused",
+            "solo": "Independent work",
+            "platform": "Mobile app"
+        }
     }
 }
