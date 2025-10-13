@@ -26,7 +26,7 @@ function Navbar({ toggleLanguage, currentLang, t }) {
           <FaGithub className="w-6 h-6 text-gray-700 hover:text-blue-600 transition" />
         </a>
         <a
-          href="https://linkedin.com/in/sylvan-groot-a49412176"
+          href="https://www.linkedin.com/in/sylvan-groot/"
           target="_blank"
           rel="noopener noreferrer"
         >

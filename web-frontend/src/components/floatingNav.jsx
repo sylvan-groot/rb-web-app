@@ -93,7 +93,7 @@ function FloatingNav({ toggleLanguage, currentLang, t }) {
                                     <FaGithub size={20} />
                                 </a>
                                 <a
-                                    href="https://linkedin.com/in/sylvan-groot-a49412176"
+                                    href="https://www.linkedin.com/in/sylvan-groot/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-gray-700 hover:text-blue-600"

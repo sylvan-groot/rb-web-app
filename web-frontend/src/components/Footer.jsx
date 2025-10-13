@@ -32,7 +32,7 @@ function Footer() {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/sylvan-groot-a49412176/"
+            href="https://www.linkedin.com/in/sylvan-groot/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-black-700 text-xl"

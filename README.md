@@ -1,8 +1,8 @@
 # Personal Portfolio Website
 
-A personal portfolio website hosted on a Raspberry Pi to showcase my skills and projects.  
+A personal portfolio project hosted on a Raspberry Pi to display a Java and React website.  
 
-This project demonstrates a full-stack setup with a React front-end, Spring Boot back-end, and PostgreSQL database, all running on a self-hosted Raspberry Pi with secure deployment.
+This project demonstrates a full-stack setup with a React front-end, Spring Boot back-end and PostgreSQL database, all running on a self-hosted Raspberry Pi with secure deployment and autonomous.
 
 ## Features
 
@@ -14,11 +14,11 @@ This project demonstrates a full-stack setup with a React front-end, Spring Boot
 
 ## Tech Stack
 
-- **Front-end:** React, HTML, CSS, JavaScript  
+- **Front-end:** React, Tailwind CSS, JavaScript  
 - **Back-end:** Spring Boot (Java 21)  
 - **Database:** PostgreSQL
 - **Server & Deployment:** Raspberry Pi, Nginx, Gunicorn, Python, Bash scripts  
-- **Domain & Security:** Custom domain with HTTPS and SSL certification  
+- **Domain & Security:** Custom domain with HTTPS, SSL certification and active firewall protection
 
 ## Deployment
 
