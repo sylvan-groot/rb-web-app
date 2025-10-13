@@ -1,6 +1,6 @@
 {
     "front": {
-        "greeting": "Hi, I'm Sylvan. Test",
+        "greeting": "Hi, I'm Sylvan",
         "subtitle": "Junior software developer, specialized in building full-stack apps, backend services and databases. I also work with Docker, AI, and Cloud (Azure & AWS) to create functional and maintainable software.",
         "about": "About me"
     },
