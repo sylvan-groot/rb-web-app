@@ -1,7 +1,10 @@
 {
     "front": {
-        "greeting": "Hoi, ik ben Sylvan",
-        "subtitle": "Junior softwareontwikkelaar, gespecialiseerd in het ontwikkelen van full-stack apps, backend-services en databases. Hiernaast werk ik ook met Docker, AI en Cloud (Azure & AWS) om functionele en onderhoudbare software te bouwen.",
+        "greeting": "Hoi, Ik ben Sylvan",
+        "greeting_morning": "Goedemorgen, ik ben Sylvan",
+        "greeting_afternoon": "Goedenmiddag, ik ben Sylvan",
+        "greeting_evening": "Goedenavond, ik ben Sylvan",
+        "subtitle": "Junior softwareontwikkelaar, gespecialiseerd in het ontwikkelen van full-stack apps, backend-services en databases. Hiernaast werk ik ook met Docker, AI en Cloud oplossingen (Azure & AWS) om functionele en onderhoudbare software te bouwen.",
         "about": "Over mij"
     },
     "whoami": {

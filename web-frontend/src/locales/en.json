@@ -1,12 +1,15 @@
 {
     "front": {
         "greeting": "Hi, I'm Sylvan",
-        "subtitle": "Junior software developer, specialized in building full-stack apps, backend services and databases. I also work with Docker, AI, and Cloud (Azure & AWS) to create functional and maintainable software.",
+        "greeting_morning": "Good morning, I'm Sylvan",
+        "greeting_afternoon": "Good afternoon, I'm Sylvan",
+        "greeting_evening": "Good evening, I'm Sylvan",
+        "subtitle": "Junior software developer, specialized in building full-stack apps, backend services and databases. I also work with Docker, AI and Cloud (Azure & AWS) to create functional and maintainable software.",
         "about": "About me"
     },
     "whoami": {
         "title": "Who am I",
-        "para1": "My name is Sylvan Groot, I'm a 24 Year old software developer from the Netherlands. I have been programming for 8 years now and have experience with various programming languages, frameworks and technologies.",
+        "para1": "My name is Sylvan Groot, I'm a 24 year old software developer from the Netherlands. I have been programming for 8 years now and have experience with various programming languages, frameworks and technologies.",
         "para2": "What started as interest and curiousity with computers and problem-solving has grown into learning more about programming applications using different methods and languages. Over the years, I’ve explored different areas of IT from web development to AI, from backend systems to database design. This wide exposure has helped me adapt quickly to new technical challenges.",
         "para3": "I have recently graduated with a bachelor’s degree in HBO-ICT Software Engineering, during which I gained theoretical knowledge and practical experience through several internships and real-world projects. These experiences have taught me how to work in teams, write maintainable code and deliver solutions."
     },

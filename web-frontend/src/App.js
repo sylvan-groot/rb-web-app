@@ -15,6 +15,16 @@ function App() {
   const [workExp, setWorkExp] = useState([]);
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState('nl');
+  const hour = new Date().getHours();
+  let greetingKey = "front.greeting";
+
+  if (hour < 12 && hour >= 5) {
+    greetingKey = "front.greeting_morning";
+  } else if (hour < 18) {
+    greetingKey = "front.greeting_afternoon";
+  } else {
+    greetingKey = "front.greeting_evening";
+  }
 
   useEffect(() => {
     fetch("/api/projects")
@@ -62,9 +72,9 @@ function App() {
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
-              className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-blue-700 mb-4"
+              className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-blue-700 mb-4"
             >
-              {t("front.greeting")}
+              {t(greetingKey)}
             </motion.h1>
             <p className="text-lg sm:text-xl md:text-3xl text-gray-600 mb-12 md:mb-20 leading-relaxed">
               {t("front.subtitle")}
