@@ -65,6 +65,7 @@ function App() {
               className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-blue-700 mb-4"
             >
               {t("front.greeting")}
+              test
             </motion.h1>
             <p className="text-lg sm:text-xl md:text-3xl text-gray-600 mb-12 md:mb-20 leading-relaxed">
               {t("front.subtitle")}
